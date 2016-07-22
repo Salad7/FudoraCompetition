@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tumblr_primary"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_home"
+    tools:context=".Home">
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/note_advanced_tumblr"
+        android:textColor="@color/tumblr_primary"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:id="@+id/textView2" />
+
+    <com.example.salad.foodora.widget.ClipRevealFrame
+        android:id="@+id/menu_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/tumblr_primary"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <com.example.salad.foodora.widget.ArcLayout
+            android:id="@id/arc_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:arc_axisRadius="@dimen/layout_child_offset_tumblr"
+            app:arc_origin="center"
+            app:arc_radius="@dimen/layout_radius_tumblr"
+            >
+
+
+            <Button
+                style="@style/Item.Tumblr"
+                android:background="@drawable/tumblr_orange_oval"
+                android:id="@+id/button_local"
+                android:text="L"
+                />
+
+            <Button
+                style="@style/Item.Tumblr"
+                android:background="@drawable/tumblr_green_oval"
+                android:text="B"
+                />
+
+            <Button
+            style="@style/Item.Tumblr"
+            android:background="@drawable/tumblr_white_oval"
+            android:text="C"
+            />
+
+            <Button
+            style="@style/Item.Tumblr"
+             android:id="@+id/button_calender"
+            android:background="@drawable/tumblr_grey_oval"
+            android:text="D"
+            />
+
+            <Button
+            style="@style/Item.Tumblr"
+            android:id="@+id/button_create"
+            android:background="@drawable/tumblr_blue_oval"
+            android:text="C"
+            />
+
+            <!--</com.example.salad.library.ArcLayout>-->
+        </com.example.salad.foodora.widget.ArcLayout>
+        <Button
+            android:id="@+id/center_item"
+            style="@style/Item.Tumblr"
+            android:layout_gravity="center"
+            android:background="@drawable/tumblr_red_oval"
+            android:text="F"
+            />
+
+    </com.example.salad.foodora.widget.ClipRevealFrame>
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/tumblr_menu_oval"
+        android:text="+"
+        android:textColor="#FFFF"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account"
+        android:textSize="11dp"
+        android:typeface="monospace"
+        android:id="@+id/text_account"
+        android:layout_marginBottom="107dp"
+        android:layout_above="@+id/fab"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create"
+        android:textSize="11dp"
+        android:typeface="monospace"
+        android:id="@+id/textView"
+        android:layout_marginBottom="84dp"
+        android:layout_above="@+id/text_account"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's Local"
+        android:id="@+id/textView3"
+        android:textSize="11dp"
+        android:typeface="monospace"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/text_account"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+
+</RelativeLayout>

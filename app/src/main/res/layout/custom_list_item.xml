@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#d3d3d3"
+    android:layout_width="fill_parent"
+    android:layout_height="140dp"
+    android:weightSum="1">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/tumblr_white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="420dp"
+        android:layout_height="140dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stars"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/custom_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/custom_logo"
+        android:layout_alignStart="@+id/custom_logo"
+        android:layout_alignRight="@+id/custom_logo"
+        android:layout_alignEnd="@+id/custom_logo" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/premium2"
+        android:textSize="13dp"
+        style="@style/Item.Tumblr"
+        android:textColor="#000000"
+        android:id="@+id/custom_logo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/custom_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="First Meeting"
+        android:layout_marginBottom="10dp"
+        android:typeface="monospace"
+        android:textColor="#000000"
+        android:id="@+id/custom_desc"
+        android:layout_above="@+id/custom_date"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginBottom="10dp"
+        android:typeface="monospace"
+        android:text="1/18 3:30 WW Hall"
+        android:id="@+id/custom_date"
+        android:layout_above="@+id/custom_cate"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Provided?"
+        android:id="@+id/custom_isfood"
+        android:checked="false"
+        android:typeface="monospace"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_below="@+id/custom_logo"
+        android:layout_alignLeft="@+id/custom_logo"
+        android:layout_alignStart="@+id/custom_logo" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking?"
+        android:textSize="13dp"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:id="@+id/custom_isparking"
+        android:checked="false"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="Category : Other"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:id="@+id/custom_cate"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignLeft="@+id/custom_date"
+        android:layout_alignStart="@+id/custom_date" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button"
+        android:background="@drawable/tumblr_green_oval"
+        android:text="+"
+        android:textSize="23dp"
+        style="@style/Item.Tumblr"
+        android:textColor="#FFFF"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_above="@+id/custom_isfood"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+</RelativeLayout>

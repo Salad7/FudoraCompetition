@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Foodora</string>
+    <string name="action_settings">Settings</string>
+    <string name="note_advanced_tumblr">Tumblr Style</string>
+    <item name="arc_layout" type="id"/>
+    <item name="note_text" type="id"/>
+    <string name="account">Foodora</string>
+    <string name="local">Local</string>
+</resources>

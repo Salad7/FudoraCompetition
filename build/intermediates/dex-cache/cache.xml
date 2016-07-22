@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/salad/Desktop/Foodora/app/build/intermediates/exploded-aar/com.prolificinteractive/material-calendarview/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="602a30946642f5847eb66dec199e6783b10e7384">
+        <dex dex="/Users/salad/Desktop/Foodora/app/build/intermediates/pre-dexed/debug/classes-c78471fd0ced542a524f7892723e4af78779d45b.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bkg"
+    tools:context="com.example.login.LoginActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:id="@+id/linearLayout2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/black"
+                android:alpha="0.6"
+                android:textColor="#000000"
+                android:hint="username"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:background="@android:color/black"
+                android:alpha="0.6"
+                android:textColor="#000000"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/fudoralogo"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Not a memeber? Sign up now."
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="107dp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_gravity="center"
+        android:text="Sign in"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/btnregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp" />
+</RelativeLayout>
